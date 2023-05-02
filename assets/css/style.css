@@ -1,0 +1,444 @@
+/*Variaveis Globais*/
+
+:root {
+    --primary-color: rgba(12, 39, 13);
+    --secondary-color: rgb(38, 166, 42);
+    --white-color: #FFFFFF;
+    --light-gray-color: #EEEEEE;
+    --gap: 3rem;
+}
+
+/*Alteraçõem em elemento principais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'times new roman', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'times new roman', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 6rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+/*Classes Genericas*/
+
+.close-menu {
+    display: none;
+}
+
+.main-bg {
+    background-color: rgb(0, 20, 0);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.greem-bg {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.first-bg {
+    background-image: url('/assets/img/Fundo1.png');
+    color: var(--white-color);
+    background-size: cover;
+    background-position: center center;
+}
+
+.second-bg {
+    background-image: url('/assets/img/Fundo2.png');
+    color: var(--white-color);
+    background-size: cover;
+    background-position: center center;
+}
+
+.third-bg {
+    background-image: url('/assets/img/Fundo3.png');
+    color: var(--white-color);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    height: 8rem;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+
+/*Classes de Menu*/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu img {
+    width: 8.5rem;
+}
+
+/*Classes de Primeira Sessão*/
+.intro-content {
+    /* margin-top: 4rem; */
+    max-width: 1400rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.intro-content h1 {
+    font-size: 2rem;
+}
+
+.intro-content h3 {
+    font-size: 8rem;
+    margin-bottom: 5rem;
+}
+
+.intro-content button {
+    width: 18rem;
+    height: 6rem;
+    border: none;
+    border-radius: 1.5rem;
+
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #EEEEEE;
+
+    padding: 1.5rem 3rem;
+    background-color: rgb(8, 65, 11);
+    color: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+
+.intro-content button:hover {
+    background-color: rgb(17, 130, 23);
+    color: var(--white-color);
+}
+
+
+/*Classes de Segunda e Terceira Sessão*/
+.conteudo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.conteudo-text-content .conteudo-img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.conteudo-text-content h2 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.conteudo-img img {
+    max-width: 100%;
+    min-width: 40rem;
+    height: auto;
+}
+
+
+
+/*Classes de Sobre*/
+
+.sobre-content {
+    padding: 3rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-content h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.sobre-content p {
+    max-width: 100rem;
+}
+
+/*Classes para conteudo teorico*/
+
+.eduAmbient-content {
+    padding: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    align-items: center;
+    text-align: center;
+}
+
+.eduAmbient-content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.eduAmbient-content p {
+    max-width: 100rem;
+}
+
+
+/* Para Mobile */
+@media (max-width: 900px) {
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content,
+    .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+
+    .menu-spacing {
+        display: none;
+    }
+
+    .eduAmbient-content {
+        padding: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .eduAmbient-content h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .eduAmbient-content p {
+        font-size: 70%;
+    }
+
+    .sobre-content {
+        padding: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .sobre-content h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .sobre-content p {
+        font-size: 60%;
+    }
+
+    .conteudo-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: var(--gap);
+        min-height: 100vh;
+    }
+
+    .conteudo-text-content h2 {
+        font-size: 130%;
+        margin-bottom: 5rem;
+    }
+
+    .conteudo-text-content p {
+        font-size: 70%;
+    }
+    
+    .conteudo-img img {
+        max-width: 50%;
+        min-width: 30rem;
+        height: auto;
+    }
+    
+    .intro-content h1 {
+        font-size: 60%;
+    }
+    
+    .intro-content h3 {
+        font-size: 120%;
+        margin-bottom: 2.5rem;
+    }
+    
+    .intro-content button {
+        width: 10rem;
+        height: 4rem;
+        border: none;
+        border-radius: 1.5rem;
+    
+        font-size: 1.1rem;
+        font-weight: 200;
+        color: #EEEEEE;
+    
+        padding: 0.25rem 1.5rem;
+        background-color: rgb(8, 65, 11);
+        color: var(--white-color);
+        transition: all 300ms ease-in-out;
+    }
+    
+    .intro-content button:hover {
+        background-color: rgb(17, 130, 23);
+        color: var(--white-color);
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+}
