@@ -90,14 +90,14 @@ p {
 }
 
 .first-bg {
-    background-image: url('img/Fundo1.png');
+    background-image: url("img/Fundo1.png");
     color: var(--white-color);
     background-size: cover;
     background-position: center center;
 }
 
 .second-bg {
-    background-image: url('img/Fundo2.png');
+    background-image: url("img/Fundo2.png");
     color: var(--white-color);
     background-size: cover;
     background-position: center center;
