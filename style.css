@@ -261,7 +261,7 @@ body .full-width {
     margin-left: 12rem;
     margin-right: 12rem;
     align-items: center;
-    text-align: center;
+    text-align: justify;
 }
 
 .sobre-content h2 {
@@ -276,11 +276,13 @@ body .full-width {
 /*Classes para conteudo teorico*/
 
 .eduAmbient-content {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
     align-items: center;
-    text-align: center;
+    text-align: justify;
 }
 
 .eduAmbient-content h1 {
@@ -295,11 +297,6 @@ body .full-width {
 
 /* Para Mobile */
 @media (max-width: 900px) {
-
-    .intro-content {
-        display: flex;
-        flex-direction: column;
-    }
 
     .menu {
         bottom: 0;
@@ -349,38 +346,40 @@ body .full-width {
         display: none;
     }
 
-    .eduAmbient-content {
-        padding: 3rem;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .eduAmbient-content h1 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .eduAmbient-content p {
-        font-size: 70%;
+    .intro-content {
+        display: flex;
+        flex-direction: column;
     }
 
-    .sobre-content {
-        padding: 3rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        align-items: center;
-        text-align: center;
+    .intro-content h1 {
+        font-size: 65%;
     }
-    
-    .sobre-content h2 {
-        font-size: 3rem;
-        margin-bottom: 2rem;
+
+    .intro-content h3 {
+        font-size: 161%;
+        margin-bottom: 2.5rem;
     }
-    
-    .sobre-content p {
-        font-size: 60%;
+
+    .intro-content button {
+        width: 15rem;
+        height: 5rem;
+        border: none;
+        border-radius: 1.5rem;
+
+        font-size: 2rem;
+        font-style: bold;
+        font-weight: 400;
+        color: #EEEEEE;
+
+        padding: 0.25rem 1.5rem;
+        background-color: rgb(8, 65, 11);
+        color: var(--white-color);
+        transition: all 300ms ease-in-out;
+    }
+
+    .intro-content button:hover {
+        background-color: rgb(17, 130, 23);
+        color: var(--white-color);
     }
 
     .conteudo-content {
@@ -388,54 +387,62 @@ body .full-width {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        gap: var(--gap);
+        gap: var(--gap)-1;
         min-height: 100vh;
     }
 
     .conteudo-text-content h2 {
         font-size: 130%;
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
+        text-align: center;
     }
 
     .conteudo-text-content p {
         font-size: 70%;
+        margin-bottom: 0;
+        text-align: justify;
     }
-    
+
     .conteudo-img img {
         max-width: 50%;
         min-width: 30rem;
         height: auto;
     }
-    
-    .intro-content h1 {
+
+    .eduAmbient-content {
+        padding: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        align-items: center;
+    }
+
+    .eduAmbient-content h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .eduAmbient-content p {
+        font-size: 70%;
+        text-align: justify;
+    }
+
+    .sobre-content {
+        padding: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-items: center;
+    }
+
+    .sobre-content h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .sobre-content p {
         font-size: 60%;
-    }
-    
-    .intro-content h3 {
-        font-size: 120%;
-        margin-bottom: 2.5rem;
-    }
-    
-    .intro-content button {
-        width: 10rem;
-        height: 4rem;
-        border: none;
-        border-radius: 1.5rem;
-    
-        font-size: 1.1rem;
-        font-weight: 200;
-        color: #EEEEEE;
-    
-        padding: 0.25rem 1.5rem;
-        background-color: rgb(8, 65, 11);
-        color: var(--white-color);
-        transition: all 300ms ease-in-out;
-    }
-    
-    .intro-content button:hover {
-        background-color: rgb(17, 130, 23);
-        color: var(--white-color);
+        text-align: justify;
     }
 
     footer {
